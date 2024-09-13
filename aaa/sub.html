@@ -9,19 +9,18 @@
 	const userAgent = navigator.userAgent;
 		if (userAgent.search("Line") == -1) {
 			alert("Lineじゃねぇ！");
-			location.pathname = "/aaa/sub.html";
 		}
 		else {
 			alert("Lineだわ！！");
 			if (location.href.search("openExternalBrowser=1") == -1) {
 
-				location.href = "https://www.google.co.jp/?openExternalBrowser=1";
+				// location.href = "https://www.google.co.jp/?openExternalBrowser=1";
 			}
 		}
 	
 	
 </script>
 <body>
-	<h1>テストです</h1>
+	<h1>サブです。</h1>
 </body>
 </html>
