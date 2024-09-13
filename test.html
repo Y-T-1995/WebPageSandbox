@@ -6,7 +6,11 @@
     <title>test</title>
 </head>
 <script>
-	location.href += "?openExternalBrowser=1";
+	if(location.href.search("?openExternalBrowser=1") == -1)
+	{
+		location.href += "?openExternalBrowser=1";
+	}
+	
 </script>
 <body>
 	<h1>テストです</h1>
