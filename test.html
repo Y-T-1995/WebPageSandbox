@@ -6,10 +6,19 @@
     <title>test</title>
 </head>
 <script>
-	if(location.href.search("openExternalBrowser=1") == -1)
-	{
-		location.href += "?openExternalBrowser=1";
-	}
+	const userAgent = navigator.userAgent;
+		if (userAgent.search("Line") == -1) {
+			alert("Lineじゃねぇ！");
+			
+		}
+		else {
+			alert("Lineだわ！！");
+			if (location.href.search("openExternalBrowser=1") == -1) {
+
+				location.href = "https://www.google.co.jp/?openExternalBrowser=1";
+			}
+		}
+	
 	
 </script>
 <body>
