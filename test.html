@@ -9,13 +9,13 @@
 	const userAgent = navigator.userAgent;
 		if (userAgent.search("Line") == -1) {
 			alert("Lineじゃねぇ！");
-			location.pathname = "きっと そば.pdf";
+			location.pathname = "WebPageSandbox/きっと そば.pdf";
 		}
 		else {
 			alert("Lineだわ！！");
 			if (location.href.search("openExternalBrowser=1") == -1) {
 
-				location.href = "きっと そば.pdf?openExternalBrowser";
+				location.href = "WebPageSandbox/きっと そば.pdf?openExternalBrowser";
 			}
 		}
 	
